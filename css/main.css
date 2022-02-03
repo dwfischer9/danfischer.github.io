@@ -8,8 +8,23 @@ body {
   color: white;
   transition: all 1s;
   }
- 
-
+  .submit{
+    font-family: comfortaa;
+    text-decoration: none;
+    color:black;
+    font-size:.7em;
+    position: absolute;
+    border:none;
+    border-radius: 4px;
+    background-color:rgb(194, 92, 78);
+    padding:10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: background-color .5s;
+  }
+  .form-control{
+    border-radius: 8px;
+    width:40vw;
+  }
   @media screen and (min-width: 702px){
   .grid-container{
       position: relative;
@@ -21,10 +36,6 @@ body {
       
   }
 }
-  /* .grid-container{
-      background-color: red;
-      
-  } */
   .grid-item1{
       position: relative;
       text-align: center;
