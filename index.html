@@ -21,13 +21,14 @@
             <a href="files/Resume_Daniel_Fischer.pdf" target="_blank"><i class="fa fa-file"></i>Resume</a>
             <a href="https://github.com/dwfischer9"  target = "_blank"><i class="fab fa-github-square"></i>Github</a>
             <a href="https://www.linkedin.com/in/danwfischer/" target = "_blank"><i class="fa fa-linkedin-square" ></i>LinkedIn</a>
+            <a onclick ="darkMode()"><i class="fas fa-adjust" id = "moon"></i>Dark Mode</button>
             <a href="javascript:void(0);" class="icon" onclick="hamburger()">
               <i class="fa fa-bars"></i>
             </a>
           </div>
           <div class="main">
           <div style="padding:16px">
-            <h1>!Hi👋 I'm Daniel Fischer</h1>
+            <h1>Hi👋 I'm Daniel Fischer</h1>
             <p>I'm a university student and developer. Some of my skills include Java, HTML, CSS, and mySQL. I love learning new technologies and I adapt to new situations quickly.</p>
             <h2>PROJECTS</h2>
           </div>
@@ -48,6 +49,10 @@
               x.className = "topnav";
             }
           }
+          function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
           </script>
           
           </body>
