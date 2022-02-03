@@ -1,0 +1,9 @@
+{
+   
+    "configurations": [
+      {
+   
+        "outputCapture": "std" // or "console" 
+      }
+    ]
+  }
