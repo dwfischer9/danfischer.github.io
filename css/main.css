@@ -62,6 +62,7 @@ body {
   .grid-item1 p{
     position:relative;
     top:20%;
+    padding:10px;
   }
   .grid-item2{
     border-radius: 8px;
@@ -78,6 +79,7 @@ body {
 .grid-item2 p{
   position:relative;
   top:20%;
+  padding:10px;
 }
 
 
