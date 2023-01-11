@@ -29,7 +29,11 @@ body {
   position: absolute;
   border: none;
   border-radius: 4px;
+<<<<<<< HEAD
   background-color: rgb(194, 92, 78);
+=======
+  background-color: #8240e5;
+>>>>>>> 152f87c (d)
   padding: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: background-color .5s;
@@ -47,28 +51,60 @@ body {
     justify-content: center;
     grid-template-columns: 450px 450px;
     column-gap: 40px;
+<<<<<<< HEAD
     row-gap: 40px;
+=======
+>>>>>>> 152f87c (d)
     grid-template-rows: auto auto;
   }
 
 }
 
+<<<<<<< HEAD
 .grid-item p {
+=======
+.grid-item1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.4)), url("/images/Snakegame.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  border-radius: 8px;
+  transition: background .5s;
+}
+
+.grid-item1 p {
+>>>>>>> 152f87c (d)
   position: relative;
   top: 20%;
   padding: 10px;
 }
 
+<<<<<<< HEAD
 .grid-item {
   border-radius: 24px 24px 18px 18px;
   position: relative;
   text-align: center;
   color: blue;
   font-size: 1.2em;
+=======
+.grid-item2 {
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url("/images/weatherapp.png");
+>>>>>>> 152f87c (d)
   background-position: initial;
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
+<<<<<<< HEAD
 }
 
 .border {
@@ -115,6 +151,12 @@ Styling for grid images.
 }
 
 
+=======
+}
+
+
+
+>>>>>>> 152f87c (d)
 .grid-container a {
   font-family: comfortaa;
   text-decoration: none;
@@ -123,7 +165,11 @@ Styling for grid images.
   position: absolute;
   border: none;
   border-radius: 4px;
+<<<<<<< HEAD
   background-color: rgb(194, 92, 78);
+=======
+  background-color: #8240e5;
+>>>>>>> 152f87c (d)
   padding: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: background-color .5s;
@@ -157,7 +203,10 @@ Styling for grid images.
 
   overflow: hidden;
   background-color: #333;
+<<<<<<< HEAD
   border-radius: 0px 0px 20px 20px;
+=======
+>>>>>>> 152f87c (d)
 }
 
 .topnav a {
@@ -182,7 +231,11 @@ Styling for grid images.
 }
 
 .topnav a.active {
+<<<<<<< HEAD
   background-color: #c25c4e;
+=======
+  background-color: #8240e5;
+>>>>>>> 152f87c (d)
   color: white;
 }
 
@@ -225,6 +278,7 @@ Styling for grid images.
     display: block;
     text-align: left;
   }
+<<<<<<< HEAD
 }
 
 
@@ -238,4 +292,6 @@ Styling for grid images.
 .blog-post-subtitle {
   font-size: 1.2;
   text-align: center;
+=======
+>>>>>>> 152f87c (d)
 }
