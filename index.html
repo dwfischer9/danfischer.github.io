@@ -1,91 +1,109 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Daniel Fischer</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    <!-- FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/b7dfe2c1c0.js" crossorigin="anonymous"></script>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Daniel Fischer</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/b7dfe2c1c0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
-        <div class="topnav" id="myTopnav">
-            <a href="#" class="active">Home</a>
-            <a href="#contact">Contact</a>
-            <a href="files/Resume_Daniel_Fischer.pdf" target="_blank"><i class="fa fa-file"></i>Resume</a>
-            <a href="https://github.com/dwfischer9"  target = "_blank"><i class="fab fa-github-square"></i>Github</a>
-            <a href="https://www.linkedin.com/in/danwfischer/" target = "_blank"><i class="fa fa-linkedin-square" ></i>LinkedIn</a>
-            <a onclick ="darkMode()"><i class="fas fa-adjust" id = "moon"></i>Dark Mode</button>
-            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-              <i class="fa fa-bars"></i>
-            </a>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="files/Resume_Daniel_Fischer.pdf" target="_blank"><i class="fa fa-file"></i>Resume</a>
+    <a href="https://github.com/dwfischer9" target="_blank"><i class="fab fa-github-square"></i>Github</a>
+    <a href="https://www.linkedin.com/in/danwfischer/" target="_blank"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
+    <a onclick="darkMode()"><i class="fas fa-adjust" id="moon"></i>Dark Mode</button>
+      <a href="/subpages/blog.html">My Blog</a>
+      <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+  <div class="main">
+    <div style="padding:16px">
+      <h1>Hi👋 I'm Daniel Fischer</h1>
+      <p>I'm a university student and developer. Some of my skills include Python, Javascript, Node.js,Java, HTML, CSS,
+        and mySQL. I love learning
+        new technologies and I adapt to new situations quickly.</p>
+      <h2 class="projects">PROJECTS</h2>
+    </div>
+
+  </div>
+  <div class="grid-container">
+    <div class="grid-item" id="snake">
+      <div class="border"></div>
+      <h3>Java Snake Game</h3>
+      <p>Using Java's Swing and AWT libraries, I recreated the classic arcade-style game, Snake. <br>To try it out,
+        download the JAR below and run it.</p><a href="https://github.com/dwfischer9/CoffeeSnake" target="_blank"
+        class="source">Source Code</a> <a class="get" href="./files/SnakeGame.jar" target="_blank">Download JAR</a>
+    </div>
+    <div class="grid-item" id="weather">
+      <h3>Weather Webapp</h3>
+      <p>I created a webapp utilizing NodeJS and its Express framework that fetches and displays weather data based on a
+        location input by the user.</p><a href="https://github.com/dwfischer9/weather-webapp" target="_blank"
+        class="source">Source Code</a> <a class="get" href="https://df-weather-app.herokuapp.com/" target="_blank">Live
+        Version</a>
+    </div>
+    <!-- <div class="grid-item"></div>
+    <div class="grid-item"></div> -->
+  </div>
+  <div id="contact">
+    <div class="emailform">
+      <h2>Contact Me</h2>
+      <form target="_blank" action="https://formsubmit.co/41504e3df315e9267ac971b90cbb3155" method="POST">
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col">
+              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="col">
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
           </div>
-          <div class="main">
-          <div style="padding:16px">
-            <h1>Hi👋 I'm Daniel Fischer</h1>
-            <p>I'm a university student and developer. I'm in my third year of my Computer Science major. Some of my skills include Java, HTML, CSS, and mySQL. <br> I love learning new technologies and I adapt to new situations quickly.</p>
-            <h2 class ="projects">PROJECTS</h2>
-          </div>
-          
         </div>
-        <div class="grid-container">
-            <div class="grid-item1"><h3>Java Snake Game</h3> <p>Using Java's Swing and AWT libraries, I recreated the classic arcade-style game, Snake. <br>To try it out, download the JAR below and run it.</p><a href="https://github.com/dwfischer9/CoffeeSnake" target = "_blank"class ="source">Source Code</a> <a class = "get" href="./files/SnakeGame.jar" target="_blank">Download JAR</a></div>
-            <div class="grid-item2"><h3>Weather Webapp</h3> <p>I created a webapp utilizing NodeJS and its Express framework that fetches and displays weather data based on a location input by the user.</p><a href="https://github.com/dwfischer9/weather-webapp" target = "_blank"class ="source">Source Code</a> <a class = "get" href="https://df-weather-app.herokuapp.com/" target="_blank">Live Version</a></div>
-            <div class="grid-item3"></div>
-            <div class="grid-item4"></div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
         </div>
-        <div id = "contact">
-          <div class="emailform">
-            <h2>Contact Me</h2>
-            <form target="_blank" action="https://formsubmit.co/41504e3df315e9267ac971b90cbb3155" method="POST">
-              <div class="form-group">
-                <div class="form-row">
-                  <div class="col">
-                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                  </div>
-                  <div class="col">
-                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <button type="submit" class="submit">Send Email</button>
-            </form>
-          </div>
-        </div>
+        <button type="submit" class="submit">Send Email</button>
+      </form>
+    </div>
+  </div>
   <script>
-          function hamburger() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-              x.className += " responsive";
-            } else {
-              x.className = "topnav";
-            }
-          }
-          function darkMode() {
-              var element1 = document.getElementById("contact");
-              var element = document.body;
-              element.classList.toggle("dark-mode");
-              element1.classList.toggle("contact-dark")
-  }
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    function hamburger() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    function darkMode() {
+      var element1 = document.getElementById("contact");
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+      element1.classList.toggle("contact-dark")
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+          behavior: 'smooth'
         });
+      });
     });
-  });
   </script>
-          
-          
+
+
 </body>
+
 </html>

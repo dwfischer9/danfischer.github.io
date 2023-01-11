@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Daniel Fischer</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/b7dfe2c1c0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="files/Resume_Daniel_Fischer.pdf" target="_blank"><i class="fa fa-file"></i>Resume</a>
+    <a href="https://github.com/dwfischer9" target="_blank"><i class="fab fa-github-square"></i>Github</a>
+    <a href="https://www.linkedin.com/in/danwfischer/" target="_blank"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
+    <a onclick="darkMode()"><i class="fas fa-adjust" id="moon"></i>Dark Mode</button>
+      <a href="blog.html" class="active">My Blog</a>
+      <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+  <main>
+    <h1 class="title"> Welcome to my blog.</h1>
+    <p>Here is where I will occasionally upload some blog posts about my life, interests and any interesting projects
+      that I might be working on. I mainly just want to have a creative outlet online.</p>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="blog-post-title">Example Blog Title</div>
+        <div class="blog-post-subtitle"> This is my blog post</div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-post-title">Example Blog Title</div>
+        <div class="blog-post-subtitle"> This is my blog post</div>
+      </div>
+      <div class="grid-item">
+        <div class="blog-post-title">Example Blog Title</div>
+        <div class="blog-post-subtitle"> This is my blog post</div>
+      </div>
+    </div>
+  </main>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hamburger() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  function darkMode() {
+    var element1 = document.getElementById("contact");
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    element1.classList.toggle("contact-dark")
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
