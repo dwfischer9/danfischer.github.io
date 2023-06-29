@@ -80,7 +80,7 @@ body {
   border-radius: 24px 24px 18px 18px;
   position: relative;
   text-align: center;
-  color: blue;
+  color: rgb(255, 255, 255);
   font-size: 1.2em;
   height: 400px;
 }
