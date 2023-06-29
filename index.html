@@ -23,37 +23,50 @@
     <a href="files/Resume_Daniel_Fischer.pdf" target="_blank"><i class="fa fa-file"></i>Resume</a>
     <a href="https://github.com/dwfischer9" target="_blank"><i class="fab fa-github-square"></i>Github</a>
     <a href="https://www.linkedin.com/in/danwfischer/" target="_blank"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
-    <a onclick="darkMode()"><i class="fas fa-adjust" id="moon"></i>Dark Mode</button>
-     <!-- <a href="/subpages/blog.html">My Blog</a> -->
+
+      <!-- <a href="/subpages/blog.html">My Blog</a> -->
       <a href="javascript:void(0);" class="icon" onclick="hamburger()">
         <i class="fa fa-bars"></i>
       </a>
   </div>
   <div class="main">
-    <div style="padding:16px">
-      <h1>Hi👋 I'm Daniel Fischer</h1>
-      <p>I'm a university student and developer. Some of my skills include Python, Javascript, Node.js,Java, HTML, CSS,
-        and mySQL. I love learning
-        new technologies and I adapt to new situations quickly.</p>
-      <h2 class="projects">PROJECTS</h2>
+    <div class="supergrid-container">
+      <div class="supergrid-item" id="intro">
+
+        <div style="padding:16px" class="header">
+          <h1>Hi👋 I'm Daniel Fischer</h1>
+          <p>I'm a a third-year computer science student currently completing a data analysis internship. In my spare time, I like to
+            grind leetcode, tweak my website and work on my game.</p>
+          <img src="images/headshot.png" alt="">
+        </div>
+      </div>
+      <div class="supergrid-item" id = "projects">
+        <h2 class="projects">PROJECTS</h2>
+        <div class="grid-container">
+          <div class="grid-item" id="snake">
+            <div class="border"></div>
+            <h3>Java Snake Game</h3>
+            <p>Using Java's Swing and AWT libraries, I recreated the classic arcade-style game, Snake. <br>To try it
+              out,
+              download the JAR below and run it.</p><a href="https://github.com/dwfischer9/CoffeeSnake" target="_blank"
+              class="source">Source Code</a> <a class="get" href="./files/SnakeGame.jar" target="_blank">Download
+              JAR</a>
+          </div>
+          <div class="grid-item" id="weather">
+            <h3>Weather Webapp</h3>
+            <p>I created a webapp utilizing NodeJS and its Express framework that fetches and displays weather data
+              based on a
+              location input by the user.</p><a href="https://github.com/dwfischer9/weather-webapp" target="_blank"
+              class="source">Source Code</a> <a class="get" href="https://df-weather-app.herokuapp.com/"
+              target="_blank">Live
+              Version</a>
+          </div>
+        </div>
+      </div>
+
+
     </div>
 
-  </div>
-  <div class="grid-container">
-    <div class="grid-item" id="snake">
-      <div class="border"></div>
-      <h3>Java Snake Game</h3>
-      <p>Using Java's Swing and AWT libraries, I recreated the classic arcade-style game, Snake. <br>To try it out,
-        download the JAR below and run it.</p><a href="https://github.com/dwfischer9/CoffeeSnake" target="_blank"
-        class="source">Source Code</a> <a class="get" href="./files/SnakeGame.jar" target="_blank">Download JAR</a>
-    </div>
-    <div class="grid-item" id="weather">
-      <h3>Weather Webapp</h3>
-      <p>I created a webapp utilizing NodeJS and its Express framework that fetches and displays weather data based on a
-        location input by the user.</p><a href="https://github.com/dwfischer9/weather-webapp" target="_blank"
-        class="source">Source Code</a> <a class="get" href="https://df-weather-app.herokuapp.com/" target="_blank">Live
-        Version</a>
-    </div>
     <!-- <div class="grid-item"></div>
     <div class="grid-item"></div> -->
   </div>
@@ -86,12 +99,6 @@
       } else {
         x.className = "topnav";
       }
-    }
-    function darkMode() {
-      var element1 = document.getElementById("contact");
-      var element = document.body;
-      element.classList.toggle("dark-mode");
-      element1.classList.toggle("contact-dark")
     }
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {

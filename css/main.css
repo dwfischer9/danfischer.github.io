@@ -2,10 +2,7 @@ body {
   margin: 0;
   font-family: comfortaa, cursive;
   transition: all 1s;
-}
-
-.dark-mode {
-  background: #121212;
+  background-color: #0F0438;
   color: white;
 }
 
@@ -24,7 +21,7 @@ body {
 .submit {
   font-family: comfortaa;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: .7em;
   position: absolute;
   border: none;
@@ -46,16 +43,37 @@ body {
     position: relative;
     display: grid;
     justify-content: center;
-    grid-template-columns: 450px 450px;
+    grid-template-columns: 450px;
     column-gap: 40px;
     grid-template-rows: auto auto;
   }
 
+  .supergrid-container {
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 500px 500px;
+    column-gap: 300px;
+    grid-template-rows: auto auto;
+  }
+
+  .supergrid-item {
+    top: 20px;
+    border-radius: 24px 24px 18px 18px;
+    position: relative;
+    background-color: #2e1489;
+      box-shadow: #2a1968 0px 10px 100px;
+    text-align: center;
+  }
+  img{
+    position: absolute;
+    top: 50px;
+    left: 24px;
+
+
+
+  }
 }
-
-
-.grid-item p {}
-
 
 
 .grid-item {
@@ -77,21 +95,17 @@ body {
 
 }
 
-.grid-item:hover {}
-
 /*
 Styling for grid images.
 */
 #snake {
   box-sizing: border-box;
   border-top: 40px;
-  border: green solid;
   background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url("/images/Snakegame.png");
   background-position: initial;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 #weather {
   background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/images/weatherapp.png");
   background-position: initial;
@@ -112,12 +126,12 @@ Styling for grid images.
 .grid-container a {
   font-family: comfortaa;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: .7em;
   position: absolute;
   border: none;
   border-radius: 4px;
-  background-color: rgb(194, 92, 78);
+  background-color: #4211F5;
 
   padding: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -149,21 +163,20 @@ Styling for grid images.
 }
 
 .topnav {
-
+  
   overflow: hidden;
-  background-color: #333;
+  background-color: #250075;
 
-  border-radius: 0px 0px 20px 20px;
-
-
+  
 }
 
 .topnav a {
   float: left;
   display: block;
   color: #f2f2f2;
+  background-color: #250075;
   text-align: center;
-  padding: 14px 16px;
+  padding: 28px 14px;
   text-decoration: none;
   font-size: 17px;
   transition: background-color, color, 0.5s;
@@ -171,8 +184,8 @@ Styling for grid images.
 
 .topnav a:hover {
   cursor: pointer;
-  background-color: #ddd;
-  color: black;
+  background-color: #442cca;
+  color: rgb(255, 255, 255);
 }
 
 .topnav a i {
@@ -180,8 +193,8 @@ Styling for grid images.
 }
 
 .topnav a.active {
-  background-color: #c25c4e;
-
+  background-color: #4211F5;
+  border: 1px solid #4211F5;
   color: white;
 }
 
@@ -200,11 +213,7 @@ Styling for grid images.
   }
 
 
-  .dark-mode {
-    background-color: #121212;
-    color: white;
-    transition: all 1s;
-  }
+
 }
 
 
